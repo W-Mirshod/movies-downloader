@@ -21,25 +21,25 @@ A Python-based GUI application that allows users to search and download movie to
 ## Installation
 
 ### Standard Installation
-\`\`\`bash
+```bash
 git clone https://github.com/yourusername/movie-downloader.git
 cd movie-downloader
 pip install -r requirements.txt
-\`\`\`
+```
 
 ### Docker Installation
-\`\`\`bash
+```bash
 docker-compose up --build
 xhost +si:localuser:root  # For Linux GUI support
-\`\`\`
+```
 
 ## Usage
 
-Standard Method: \`python movie_gui.py\`
-Docker Method: \`docker-compose up\`
+Standard Method: `python movie_gui.py`
+Docker Method: `docker-compose up`
 
 ## Project Structure
-\`\`\`
+```
 movie-downloader/
 ├── movie_gui.py        # Main GUI application
 ├── requirements.txt    # Python dependencies
@@ -47,7 +47,7 @@ movie-downloader/
 ├── docker-compose.yml # Docker Compose configuration
 ├── .gitignore        # Git ignore rules
 └── downloads/        # Downloaded torrent files
-\`\`\`
+```
 
 ## How to Use
 
@@ -61,16 +61,11 @@ movie-downloader/
 
 ## Troubleshooting
 
-- X11 Display: Run \`xhost +si:localuser:root\`
+- X11 Display: Run `xhost +si:localuser:root`
 - Downloads: Check directory permissions
 - Torrent Client: Verify default client installation
 
 ## License
 
 MIT License
-
-## Contact
-
-Your Name - your.email@example.com
 Project Link: https://github.com/yourusername/movie-downloader
-EOF
