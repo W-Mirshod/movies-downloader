@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  movie-downloader:
+    build: .
+    volumes:
+      - ./downloads:/app/downloads
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - ${XAUTHORITY:-$HOME/.Xauthority}:/root/.Xauthority:rw
+    environment:
+      - DISPLAY
+      - XAUTHORITY=/root/.Xauthority
+    security_opt:
+      - label=type:container_runtime_t
+    network_mode: "host"
