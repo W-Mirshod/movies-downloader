@@ -1,4 +1,3 @@
-cat << 'EOF' > README.md
 # Movie Torrent Downloader
 
 A Python-based GUI application that allows users to search and download movie torrents with different quality options.
